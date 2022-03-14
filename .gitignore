@@ -1,0 +1,6 @@
+
+sakila_dbt/target/
+sakila_dbt_packages/
+logs/
+sakila_dbt/logs/
+sakila-dbt-env/
