@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Customer dimension"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    description: "Date dimension"
+    columns:
+      - name: date_dim_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
