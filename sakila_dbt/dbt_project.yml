@@ -37,5 +37,8 @@ models:
     example:
       +materialized: view
     dimensions:
-      +materialized: table
-      +schema: dwh
+      materialized: table
+      schema: dwh
+    facts:
+      materialized: table
+      schema: dwh

@@ -1,0 +1,1 @@
+SELECT film.* FROM stg.film

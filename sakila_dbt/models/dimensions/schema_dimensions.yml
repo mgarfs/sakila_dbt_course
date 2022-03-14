@@ -19,3 +19,30 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: dim_film
+    description: "Film dimension"
+    columns:
+      - name: film_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_staff
+    description: "Staff dimension"
+    columns:
+      - name: staff_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_store
+    description: "Store dimension"
+    columns:
+      - name: store_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

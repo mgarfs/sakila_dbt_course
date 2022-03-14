@@ -1,11 +1,10 @@
-
 version: 2
 
 models:
   - name: fact_rental
     description: "Rental fact"
     columns:
-      - name: id
+      - name: rental_id
         description: "The primary key for this table"
         tests:
           - unique

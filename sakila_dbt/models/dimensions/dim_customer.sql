@@ -1,3 +1,5 @@
+{{ config(post_hook='INSERT INTO {{this}}(customer_id) VALUES(-1)') }}
+
 SELECT customer.*,
        customer.first_name||' '||customer.last_name AS full_name,
 	   SUBSTR(customer.email,POSITION('@' IN customer.email)+1) AS domain,

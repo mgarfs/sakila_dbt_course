@@ -1,3 +1,5 @@
+{{ config(post_hook='INSERT INTO {{this}}(date_dim_id) VALUES(-1)') }}
+
 SELECT TO_CHAR(datum, 'yyyymmdd')::INT AS date_dim_id,
        datum AS date_actual,
        EXTRACT(EPOCH FROM datum) AS epoch,
